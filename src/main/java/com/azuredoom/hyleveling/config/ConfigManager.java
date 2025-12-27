@@ -30,7 +30,7 @@ public final class ConfigManager {
         # =========================
         #
         # Supported JDBC URLs:
-        #   H2 (file):      jdbc:h2:file:./data/hyleveling;MODE=PostgreSQL
+        #   H2 (file):      jdbc:h2:file:./hyleveling/hyleveling;MODE=PostgreSQL
         #   MySQL:          jdbc:mysql://host:3306/dbname
         #   MariaDB:        jdbc:mariadb://host:3307/dbname
         #   PostgreSQL:     jdbc:postgresql://host:5432/dbname
@@ -40,7 +40,7 @@ public final class ConfigManager {
         # - For MySQL/MariaDB/Postgres, set username/password.
         #
         database:
-          jdbcUrl: "jdbc:h2:file:./data/hyleveling;MODE=PostgreSQL"
+          jdbcUrl: "jdbc:h2:file:./hyleveling/hyleveling;MODE=PostgreSQL"
           username: ""
           password: ""
           maxPoolSize: 10

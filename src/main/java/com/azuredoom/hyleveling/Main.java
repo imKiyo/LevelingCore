@@ -1,11 +1,13 @@
 package com.azuredoom.hyleveling;
 
 import com.azuredoom.hyleveling.config.ConfigManager;
+import com.azuredoom.hyleveling.config.HyLevelingConfig;
 import com.azuredoom.hyleveling.config.LevelFormulaFactory;
 import com.azuredoom.hyleveling.database.DataSourceFactory;
 import com.azuredoom.hyleveling.database.JdbcLevelRepository;
 import com.azuredoom.hyleveling.level.LevelServiceImpl;
 
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.UUID;
 
@@ -13,8 +15,10 @@ public class Main {
 
     public static final System.Logger LOGGER = System.getLogger(Main.class.getName());
 
+    public static Path configPath = Paths.get("./hyleveling");
+
     static void main() {
-        var config = ConfigManager.loadOrCreate(Paths.get("./data"));
+        var config = ConfigManager.loadOrCreate(configPath);
         var desc = LevelFormulaFactory.descriptorFromConfig(config);
         var formula = LevelFormulaFactory.fromConfig(config);
         var jdbcUrl = config.database.jdbcUrl;
