@@ -1,7 +1,5 @@
 package com.azuredoom.hyleveling.level.formulas;
 
-import com.azuredoom.hyleveling.level.LevelFormula;
-
 /**
  * Implementation of the LevelFormula interface that calculates experience points (XP) and level values using a linear
  * formula. In this model, the XP required for each level progression grows at a constant rate defined by the XP per

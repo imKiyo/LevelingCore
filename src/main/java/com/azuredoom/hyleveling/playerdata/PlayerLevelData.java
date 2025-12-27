@@ -1,4 +1,4 @@
-package com.azuredoom.hyleveling.level;
+package com.azuredoom.hyleveling.playerdata;
 
 import java.util.UUID;
 

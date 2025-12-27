@@ -1,7 +1,5 @@
 package com.azuredoom.hyleveling.level.formulas;
 
-import com.azuredoom.hyleveling.level.LevelFormula;
-
 /**
  * Implementation of the LevelFormula interface that calculates XP and level values using an exponential formula. This
  * class models the XP progression required to reach higher levels, which grows exponentially based on the provided base

@@ -1,9 +1,6 @@
 package com.azuredoom.hyleveling.level;
 
-import com.azuredoom.hyleveling.events.LevelDownListener;
-import com.azuredoom.hyleveling.events.LevelUpListener;
-import com.azuredoom.hyleveling.events.XpGainListener;
-import com.azuredoom.hyleveling.events.XpLossListener;
+import com.azuredoom.hyleveling.events.*;
 
 import java.util.UUID;
 

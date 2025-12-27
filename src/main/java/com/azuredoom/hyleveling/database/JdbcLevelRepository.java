@@ -1,7 +1,7 @@
 package com.azuredoom.hyleveling.database;
 
 import com.azuredoom.hyleveling.HyLevelingException;
-import com.azuredoom.hyleveling.level.PlayerLevelData;
+import com.azuredoom.hyleveling.playerdata.PlayerLevelData;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

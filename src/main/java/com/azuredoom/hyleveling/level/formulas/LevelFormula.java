@@ -1,4 +1,4 @@
-package com.azuredoom.hyleveling.level;
+package com.azuredoom.hyleveling.level.formulas;
 
 /**
  * Interface for defining the XP-to-level relationship and calculations in a leveling system. Provides methods to

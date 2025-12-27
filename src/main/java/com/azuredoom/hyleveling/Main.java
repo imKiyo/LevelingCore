@@ -4,6 +4,7 @@ import com.azuredoom.hyleveling.database.DataSourceFactory;
 import com.azuredoom.hyleveling.database.JdbcLevelRepository;
 import com.azuredoom.hyleveling.level.LevelServiceImpl;
 import com.azuredoom.hyleveling.level.formulas.ExponentialLevelFormula;
+import com.azuredoom.hyleveling.level.formulas.LevelFormula;
 
 import java.util.UUID;
 
@@ -14,7 +15,7 @@ public class Main {
     /**
      * Bootstrap / example entrypoint for HyLeveling.
      * <p>
-     * This demonstrates wiring a {@link com.azuredoom.hyleveling.level.LevelFormula} and a JDBC-backed
+     * This demonstrates wiring a {@link LevelFormula} and a JDBC-backed
      * {@link com.azuredoom.hyleveling.database.LevelRepository} into
      * {@link com.azuredoom.hyleveling.level.LevelServiceImpl}.
      * <h2>Supported JDBC URLs</h2>
