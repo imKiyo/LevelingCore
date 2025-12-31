@@ -348,9 +348,9 @@ public class JdbcLevelRepository implements LevelRepository {
     /**
      * Closes the underlying JDBC datasource if it implements {@link AutoCloseable}.
      * <p>
-     * This method attempts to close the {@code dataSource} resource gracefully. If the {@code dataSource}
-     * is an instance of {@code AutoCloseable}, its {@code close()} method is invoked. Any exception
-     * raised during the closing process is caught and wrapped in a {@link LevelingCoreException}.
+     * This method attempts to close the {@code dataSource} resource gracefully. If the {@code dataSource} is an
+     * instance of {@code AutoCloseable}, its {@code close()} method is invoked. Any exception raised during the closing
+     * process is caught and wrapped in a {@link LevelingCoreException}.
      *
      * @throws LevelingCoreException if an error occurs while closing the {@code dataSource}.
      */
