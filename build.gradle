@@ -5,7 +5,7 @@ plugins {
     id 'com.gradleup.shadow' version '9.3.0'
 }
 
-group = 'com.azuredoom.hyslayer'
+group = project.group
 
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(java_version)
@@ -62,6 +62,25 @@ shadowJar {
 
 tasks.build {
     dependsOn("spotlessApply", "shadowJar")
+}
+
+publishing {
+    repositories {
+        maven {
+            name = project.mod_id
+            url = project.maven_url
+            credentials(PasswordCredentials)
+            authentication {
+                basic(BasicAuthentication)
+            }
+        }
+    }
+    publications {
+        maven(MavenPublication) {
+            artifactId base.archivesName.get()
+            from components.java
+        }
+    }
 }
 
 def keyPropsFile = new File(rootProject.projectDir, "key.properties")
