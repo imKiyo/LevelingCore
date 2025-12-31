@@ -1,8 +1,6 @@
 # Welcome to the LevelingCore
 
-<img alt="GitHub License" src="https://img.shields.io/github/license/AzureDoom/LevelingCore">
-<img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/AzureDoom/LevelingCore">
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/AzureDoom/LevelingCore">
+<img alt="GitHub License" src="https://img.shields.io/github/license/AzureDoom/LevelingCore"><img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/AzureDoom/LevelingCore"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/AzureDoom/LevelingCore">
 
 LevelingCore is a powerful and flexible leveling system built for server owners who want to bring an RPG like leveling system to their Hytale servers.
 
