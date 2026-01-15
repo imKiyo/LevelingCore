@@ -10,7 +10,7 @@ Group {
   }
 
   Group {
-    LayoutMode: Left;
+    LayoutMode: Middle;
 
     Group #Icon {
       Anchor: (Left: -32, Width: 24, Height: 24, Right: 4, Top: -8);
@@ -18,16 +18,16 @@ Group {
     }
 
     Group {
-      Anchor: (Left: 0, Width: 314, Height: 12);
+      Anchor: (Left: 0, Width: 636, Height: 12);
       Background: "XPBackground.png";
 
       ProgressBar #ProgressBar {
-        Anchor: (Width: 310, Height: 12);
+        Anchor: (Width: 636, Height: 12);
         BarTexturePath: "XPFill.png";
       }
 
       ProgressBar #ProgressBarEffect {
-        Anchor: (Width: 310, Height: 12);
+        Anchor: (Width: 636, Height: 12);
         BarTexturePath: "XPEffect.png";
       }
     }
